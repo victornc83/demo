@@ -49,7 +49,7 @@
             "output": {
                "to": {
                   "kind": "ImageStreamTag",
-                  "name": "s2i-java:latest"
+                  "name": "springboot-sti:latest"
                }
             },
             "resources": {}
@@ -62,14 +62,14 @@
             "name": "centos"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:centos7"
+            "dockerImageRepository": "library/centos:7"
          }
       },
       {
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "s2i-java"
+            "name": "springboot-sti"
          },
          "spec": {
             "dockerImageRepository": "",
@@ -187,7 +187,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "s2i-java:latest"
+                           "name": "springboot-sti:latest"
                         }
                      }
                   },
@@ -425,7 +425,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "s2i-java:latest"
+                           "name": "springboot-sti:latest"
                         }
                      }
                   },
