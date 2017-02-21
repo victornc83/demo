@@ -33,10 +33,10 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jarodriguezparadigma/source-to-image.git",
+                  "uri": "https://github.com/victornc83/demo.git",
                   "ref": "master"
                },
-               "contextDir": "sti-project"
+               "contextDir": "."
             },
             "strategy": {
                "type": "Docker",
