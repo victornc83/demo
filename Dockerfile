@@ -12,10 +12,6 @@ LABEL io.k8s.description="Platform for building Java (fatjar) applications with 
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="builder,maven-3,gradle-2.6,java,microservices,fatjar"
 
-RUN yum install -y lighttpd && \
-    # clean yum cache files, as they are not needed and will only make the image bigger in the end
-    yum clean all -y
-
 RUN INSTALL_PKGS="tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
     yum install -y --enablerepo=centosplus $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
