@@ -43,7 +43,7 @@ LABEL io.k8s.description="Platform for building Java (fatjar) applications with 
 COPY ./contrib/settings.xml $HOME/.m2/
 
 #LABEL io.openshift.s2i.scripts-url=image:///usr/local/sti
-COPY .s2i/bin/ /usr/local/s2i
+COPY .s2i/bin/ /usr/libexec/s2i
 
 RUN chown -R 1001:1001 /opt/openshift
 
