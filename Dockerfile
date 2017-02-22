@@ -11,7 +11,7 @@ RUN INSTALL_PKGS="tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-
     yum clean all -y && \
     mkdir -p /opt/openshift && \
     mkdir -p /opt/app-root/source && chmod -R a+rwX /opt/app-root/source && \
-    mkdir -p /opt/s2i/destination && chmod -R a+rwX /opt/s2i/destination && \
+    mkdir -p /usr/libexec/s2i && chmod -R a+rwX /usr/libexec/s2i && \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
 
 ENV MAVEN_VERSION 3.3.9
