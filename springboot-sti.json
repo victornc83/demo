@@ -62,7 +62,7 @@
             "name": "centos"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:7"
+            "dockerImageRepository": "openshift/base-centos7"
          }
       },
       {
