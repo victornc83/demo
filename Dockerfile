@@ -28,7 +28,7 @@ RUN curl -sL -0 https://services.gradle.org/distributions/gradle-${GRADLE_VERSIO
     mv /usr/local/gradle-${GRADLE_VERSION} /usr/local/gradle && \
     ln -sf /usr/local/gradle/bin/gradle /usr/local/bin/gradle
 
-ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
+ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:/usr/libexec/s2i/:$PATH
 
 ENV BUILDER_VERSION 1.0
 
